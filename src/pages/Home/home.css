@@ -8,12 +8,19 @@
 }
 
 #header {
-	width: 950px;
-	height: 50px;
-	padding:30px 0 0 0;
 	background:#FFFFFF;
   display: flex;
   flex-direction: row;
+  font-family :"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 132.361px;
+  line-height : 20px;
+  margin-left :81.6667px;
+  margin-right : 81.6667px;
+  margin-top: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
 }
 
 .item-header-logo {
@@ -25,18 +32,6 @@
   display: flex;
   flex-direction: row;
   
-}
-
-.logo-name {
-  font-family: 'Droid Sans';
-  color: #d73a1e;
-  font-size: 20px;
-}
-
-.logo-subName {
-  font-family: 'Oswald';
-  color: #523468;
-  font-size: 16px;
 }
 
 .search {
@@ -51,30 +46,36 @@
 }
 
 .free-name {
-  font-family: 'Droid Sans';
   color: #d73a1e;
   font-size: 16px;
 }
-
 
 .bag {
 	color:#b3b3b3;
 	font-size: 25px;
 	margin:10px 0 0 0;
-	font-family: 'Droid Sans';
 }
 
 .value {
 	color:#d73a1e;
 }
 #menu {
-	width:946px;
-	height:70px;
+	width:100%;
 	color:#ffffff;
 	font-size: 15px;
 	background:#523468;
-	padding:0 95px 0 0;
-	font-family: 'Oswald';
+	padding: 0 5px 10px 0;
+  display: block;
+  font-family: "Helvetica Neue",Helvetica;
+  font-size :14px;
+  height: 50px;
+  line-height:20px;
+  margin-bottom: 50px;
+  min-height: 50px;
+  position: relative;
+  text-size-adjust:100%;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+
 }
 
 #nav {

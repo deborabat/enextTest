@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="home.css">
-  <link rel="import" href="pages/Menu/index.js">
-  <script src="componets/Home/index.js"></script>
   <script
   src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-  data-auto-a11y="true"></script>
-  <title>Merlin Posions - fin posions since 1026 -</title>
+data-auto-a11y="true"></script>
+  <title>Merlin Posions</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:light" rel="stylesheet">
+  <script src="../../componets/Home/Index.js"></script>
 </head>
 
 
@@ -18,227 +18,142 @@
   
   <div id="wrapper"> 
   
-    
+    <header>
     <div id="header">
-      <div class="item-header-logo" >
-        <h1 class="logo-name"><strong>Merlin's</strong> Posions</h1>
-        <h1 class="logo-subName">- fine posions since 1026 -</h1>
+      <div class="col-sm-3">
+        <div class="row">
+          <img src="../../../assets/logo.png" 
+             alt="Logo" id="logo"/>
+        </div> 
       </div>
-      <div class="search item-header">
-        <i class="fas fa-search" style="font-size:20px;color:#d73a1e"></i>
-        <input style="border: none;" type="search" placeholder="Search our stock">
+      <div class="col-sm-3 col-md-2">
+        <div class="search">
+          <i class="fas fa-search" style="font-size:15px;color:#d73a1e"></i>
+            <input type="text" class="form-control inputSearch" placeholder="Search our stock" style="border: none;">
+        </div>
       </div>
-      <div class="item-header-logo" >
-        <h1 class="free-name">free shipping</h1>
-        <h1 class="free-name">on order over $50</h1>
+      <div class="col-sm-2">
+        <div class="row oferta">
+          <h3 class="free-name">Free Shipping</h3>
+          <h4 class="free-name">on orders over $50</h4>
+        </div>
       </div>
-      <div class="item-header">
-        <p class="bag">BAG: <span class="value">1</span></p>
+      <div class="col-sm-1 col-xs-6">
+        <div class="item-header">
+            <img src="../../../assets/caldeirao.png" alt="Caldeirao" class="caldeirao">
+        </div>
+      </div>
+      <div class="col-sm-2 col-xs-6">
+        <div class="item-header">
+            <h4 class="bag">BAG: <span class="value">1</span></h4>
+        </div>
       </div>
     </div>
-    
-    <div id="menu">
+    </header>
+
+    <nav id="menu">
       <div id="nav">
-        <ul>
-          <li><a href="#">Potions <i class="fas fa-caret-down"></i></a>
+          <div class="navbar-collapse collapse" id="navbar-collapse">
             <ul>
-              <li><a href="#">Potions</a></li>
-              <li><a href="#">Potions</a></li>
-              <li><a href="#">Potions</a></li>
-              <li><a href="#">Potions</a></li>
-              <li><a href="#">Potions</a></li>
-              <li><a href="#">Potions</a></li>
+              <li>
+                <ul>
+                  <li><a href="#">Potions</a></li>
+                  <li><a href="#">Potions</a></li>
+                  <li><a href="#">Potions</a></li>
+                  <li><a href="#">Potions</a></li>
+                  <li><a href="#">Potions</a></li>
+                  <li><a href="#">Potions</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Ingredients <i class="fas fa-caret-down"></i></a>
+                <ul>
+                  <li><a href="#">Ingredients</a></li>
+                  <li><a href="#">Ingredients</a></li>
+                  <li><a href="#">Ingredients</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Books <i class="fas fa-caret-down"></i></a>
+                <ul>
+                  <li><a href="#">Books</a></li>
+                  <li><a href="#">Books</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Supplies <i class="fas fa-caret-down"></i></a>
+                <ul>
+                  <li><a href="#">Supplies</a></li>
+                  <li><a href="#">Supplies</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Clearance!</a></li>
             </ul>
-          </li>
-          <li><a href="#">Ingredients <i class="fas fa-caret-down"></i></a>
-            <ul>
-              <li><a href="#">Ingredients</a></li>
-              <li><a href="#">Ingredients</a></li>
-              <li><a href="#">Ingredients</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Books <i class="fas fa-caret-down"></i></a>
-            <ul>
-              <li><a href="#">Books</a></li>
-              <li><a href="#">Books</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Supplies <i class="fas fa-caret-down"></i></a>
-            <ul>
-              <li><a href="#">Supplies</a></li>
-              <li><a href="#">Supplies</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Clearance!</a></li>
-        </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Sign in</a></li>
+                  <li><a href="#">Sign up</a></li>
+              </ul>
+          </div>
       </div>
-      <div id="sign-in">
-        <p><a href="#">Sign In</a><span> or </span><a href="#">Sign Up</a></p>
-      </div>
-    </div>
+    </nav>
 
     <div id="content">
       <h1>Potions</h1>
       <ul>
         <li>
-          <div class="img-produto"><img src="assets/productos/aging-potion.png" /></div>
+          <a href="javascript:void(0);" onclick="lbox(1)" >
+            <div class="img-produto">
+              <img src="../../../assets/productos/aging-potion.png" />
+            </div>
+          </a>
           <div class="nome-produto">Aging Potion</div>
           <div class="valor-produto">29.99</div>
         </li>
         <li>
-          <div class="img-produto"><img src="assets/productos/bulgeye-potion.png" /></div>
+          <a href="javascript:void(0);" onclick="lbox(2)" >
+            <div class="img-produto">
+              <img src="../../../assets/productos/bulgeye-potion.png" />
+            </div>
+          </a>
           <div class="nome-produto">Bulgeye Potion</div>
           <div class="valor-produto">19.99</div>
         </li>
         <li>
-          <div class="img-produto"><img src="assets/productos/dragon-tonic.png" /></div>
+          <a href="javascript:void(0);" onclick="lbox(3)" >
+            <div class="img-produto">
+              <img src="../../../assets/productos/dragon-tonic.png" />
+            </div>
+          </a>
           <div class="nome-produto">Dragon Tonic</div>
           <div class="valor-produto">64.99</div>
         </li>
         <li>
-          <div class="img-produto"><img src="assets/productos/love-potion.png" /></div>
+          <a href="javascript:void(0);" onclick="lbox(4)" >
+            <div class="img-produto">
+              <img src="../../../assets/productos/love-potion.png" />
+            </div>
+          </a>
           <div class="nome-produto">Love Potion</div>
           <div class="valor-produto">29.99</div>
         </li>
         <li>
-          <div class="img-produto"><img src="assets/productos/polyjuice-potion.png" /></div>
+          <a href="javascript:void(0);" onclick="lbox(5)" >
+            <div class="img-produto">
+              <img src="../../../assets/productos/polyjuice-potion.png" />
+            </div>
+          </a>
           <div class="nome-produto">Polyjuice Potion</div>
           <div class="valor-produto">99.99</div>
         </li>
         <li>
-          <div class="img-produto"><img src="assets/productos/sleeping-draught.png" /></div>
+          <a hhref="javascript:void(0);" onclick="lbox(6)" >
+            <div class="img-produto">
+              <img src="../../../assets/productos/sleeping-draught.png" />
+            </div>
+          </a>
           <div class="nome-produto">Sleeping Draught</div>
           <div class="valor-produto">29.99</div>
         </li>
       </ul>
       
-      
-      <span class="white-box">
-      <div class="img"> <img src="assets/productos/aging-potion.png" /> </div>
-      <div class="descricao">
-        <h2>Aging Potion</h2>
-        <h2>Use/effect</h2>
-        <p>Causes the drinker to advance in age</p>
-        <h2>Ingredients</h2>
-        <p>Red Wine<br>
-          Prune Juice<br>
-          Hairy Fungus<br>
-          Tortoise Shell<br>
-          Caterpillar<br>
-          Bat Tongue</p>
-        <h2>Price</h2>
-        <p style="color:#FF0004;">$29.99</p>
-        <br>
-        <br>
-        <input type="button" value="ADD TO CART" class="btn-cart" >
-      </div>
-      </span> <span class="white-box">
-      <div class="img"> <img src="assets/productos/bulgeye-potion.png" /> </div>
-      <div class="descricao">
-        <h2>Bulgeye Potion</h2>
-        <h2>Use/effect</h2>
-        <p>It affects one's eyes, causing them to swell</p>
-        <h2>Ingredients</h2>
-        <p>Beetle eyes<br>
-          Eel eyes<br>
-        <h2>Price</h2>
-        <p style="color:#FF0004;">$19.99</p>
-        <br>
-        <br>
-        <input type="button" value="ADD TO CART" class="btn-cart" >
-      </div>
-      </span> <span class="white-box">
-      <div class="img"> <img src="assets/productos/dragon-tonic.png" /> </div>
-      <div class="descricao">
-        <h2>Dragon Tonic</h2>
-        <h2>Use/effect</h2>
-        <p>A tonic used to cure sick dragons</p>
-        <h2>Ingredients</h2>
-        <p>Eagle Owl feathers<br>
-          Peacock feathers<br>
-          Giant Purple Toad warts</p>
-        <h2>Price</h2>
-        <p style="color:#FF0004;">$64.99</p>
-        <br>
-        <br>
-        <input type="button" value="ADD TO CART" class="btn-cart" >
-      </div>
-      </span> <span class="white-box">
-      <div class="img"> <img src="assets/productos/love-potion.png" /> </div>
-      <div class="descricao">
-        <h2>Love Potion</h2>
-        <h2>Use/effect</h2>
-        <p>The one who drinks it falls deeply in love with the first person they see</p>
-        <h2>Ingredients</h2>
-        <p>Petals from a red rose<br>
-          Essence of violet<br>
-          Canary flight and down feathers<br>
-          Newt eyes</p>
-        <h2>Price</h2>
-        <p style="color:#FF0004;">$29.99</p>
-        <br>
-        <br>
-        <input type="button" value="ADD TO CART" class="btn-cart" >
-      </div>
-      </span> <span class="white-box">
-      <div class="img"> <img src="assets/productos/polyjuice-potion.png" /> </div>
-      <div class="descricao">
-        <h2>Polyjuice Potion</h2>
-        <h2>Use/effect</h2>
-        <p>Allows the drinker to assume the form of someone else</p>
-        <h2>Ingredients</h2>
-        <p>Lacewing flies<br>
-          Leeches<br>
-          Powdered bicorn horn<br>
-          Knotgrass<br>
-          Fluxweed<br>
-          Shredded Boomslang skin</p>
-        <h2>Price</h2>
-        <p style="color:#FF0004;">$99.99</p>
-        <br>
-        <br>
-        <input type="button" value="ADD TO CART" class="btn-cart" >
-      </div>
-      </span> <span class="white-box">
-      <div class="img"> <img src="assets/productos/aging-potion.png" /> </div>
-      <div class="descricao">
-        <h2>Aging Potion</h2>
-        <h2>Use/effect</h2>
-        <p>Causes the drinker to advance in age</p>
-        <h2>Ingredients</h2>
-        <p>Red Wine<br>
-          Prune Juice<br>
-          Hairy Fungus<br>
-          Tortoise Shell<br>
-          Caterpillar<br>
-          Bat Tongue</p>
-        <h2>Price</h2>
-        <p style="color:#FF0004;">$29.99</p>
-        <br>
-        <br>
-        <input type="button" value="ADD TO CART" class="btn-cart" >
-      </div>
-      </span> <span class="white-box">
-      <div class="img"> <img src="assets/productos/sleeping-draught.png" /> </div>
-      <div class="descricao">
-        <h2>Sleeping Draught</h2>
-        <h2>Use/effect</h2>
-        <p>Causes the drinker to fall almost instantaneously into a deep but temporary sleep</p>
-        <h2>Ingredients</h2>
-        <p>Sprigs of Lavender<br>
-          Measures of Standard Ingredient<br>
-          Blobs of Flobberworm Mucus<br>
-          Valerian sprigs</p>
-        <h2>Price</h2>
-        <p style="color:#FF0004;">$29.99</p>
-        <br>
-        <br>
-        <input type="button" value="ADD TO CART" class="btn-cart" >
-      </div>
-      </span> 
-      
       <div class="black-overlay"> </div>
-     
     </div>
 
 
@@ -269,28 +184,25 @@
         <input type="button" value="Submit" class="btn-enviar" >
       </div>
     </div>
-    
-    </div>
-    
-    <script type="text/javascript">
-      $(function() {
-      $('.img-produto').on( 'click', function() {
-      var listItem = $(this);
-      var elIndex = $( '.img-produto' ).index( listItem )
-      
-              
-              $('span.white-box:eq('+ elIndex +')').addClass('active');
-              $('.black-overlay').addClass('active');
-            });
-      
-            
-            $('.black-overlay').on( 'click', function() {
-              $('span.white-box.active').removeClass('active');
-              $('.black-overlay').removeClass('active');
-            });
-          });
-        </script>
-    
 
-</body>
+    <span class="white-box">
+      <a class="close" onclick="lbox()">X</a>
+      <div class="img"> <img src="" /> </div>
+      <div class="descricao">
+        <h2>Bulgeye Potion</h2>
+        <h2>Use/effect</h2>
+        <p>It affects one's eyes, causing them to swell</p>
+        <h2>Ingredients</h2>
+        <p>Beetle eyes<br>
+          Eel eyes<br>
+        <h2>Price</h2>
+        <p style="color:#FF0004;">$19.99</p>
+        <br>
+        <br>
+        <input type="button" value="ADD TO CART" class="btn-cart" >
+      </div>
+    </span> 
+
+    
+  </body>
 </html>
