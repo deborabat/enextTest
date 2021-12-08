@@ -10,7 +10,6 @@
 data-auto-a11y="true"></script>
   <title>Merlin Posions</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald:light" rel="stylesheet">
-  <script src="../../componets/Home/Index.js"></script>
 </head>
 
 
@@ -98,55 +97,43 @@ data-auto-a11y="true"></script>
       <h1>Potions</h1>
       <ul>
         <li>
-          <a href="javascript:void(0);" onclick="lbox(1)" >
-            <div class="img-produto">
+          <a  id="produto" class="img-produto" href="javascript:void(0);" onclick="openModal('1')" >
               <img src="../../../assets/productos/aging-potion.png" />
-            </div>
           </a>
           <div class="nome-produto">Aging Potion</div>
           <div class="valor-produto">29.99</div>
         </li>
         <li>
-          <a href="javascript:void(0);" onclick="lbox(2)" >
-            <div class="img-produto">
+          <a id="produto" class="img-produto" href="javascript:void(0);" onclick="openModal('2')" >
               <img src="../../../assets/productos/bulgeye-potion.png" />
-            </div>
           </a>
           <div class="nome-produto">Bulgeye Potion</div>
           <div class="valor-produto">19.99</div>
         </li>
         <li>
-          <a href="javascript:void(0);" onclick="lbox(3)" >
-            <div class="img-produto">
+          <a id="produto" class="img-produto" href="javascript:void(0);" onclick="openModal('3')" >
               <img src="../../../assets/productos/dragon-tonic.png" />
-            </div>
           </a>
           <div class="nome-produto">Dragon Tonic</div>
           <div class="valor-produto">64.99</div>
         </li>
         <li>
-          <a href="javascript:void(0);" onclick="lbox(4)" >
-            <div class="img-produto">
+          <a id="produto" class="img-produto" href="javascript:void(0);" onclick="openModal('4')" >
               <img src="../../../assets/productos/love-potion.png" />
-            </div>
           </a>
           <div class="nome-produto">Love Potion</div>
           <div class="valor-produto">29.99</div>
         </li>
         <li>
-          <a href="javascript:void(0);" onclick="lbox(5)" >
-            <div class="img-produto">
+          <a id="produto" class="img-produto" href="javascript:void(0);" onclick="openModal('5')" >
               <img src="../../../assets/productos/polyjuice-potion.png" />
-            </div>
           </a>
           <div class="nome-produto">Polyjuice Potion</div>
           <div class="valor-produto">99.99</div>
         </li>
         <li>
-          <a hhref="javascript:void(0);" onclick="lbox(6)" >
-            <div class="img-produto">
+          <a id="produto" class="img-produto" hhref="javascript:void(0);" onclick="openModal(6)" >
               <img src="../../../assets/productos/sleeping-draught.png" />
-            </div>
           </a>
           <div class="nome-produto">Sleeping Draught</div>
           <div class="valor-produto">29.99</div>
@@ -185,24 +172,24 @@ data-auto-a11y="true"></script>
       </div>
     </div>
 
-    <span class="white-box">
-      <a class="close" onclick="lbox()">X</a>
-      <div class="img"> <img src="" /> </div>
-      <div class="descricao">
-        <h2>Bulgeye Potion</h2>
-        <h2>Use/effect</h2>
-        <p>It affects one's eyes, causing them to swell</p>
-        <h2>Ingredients</h2>
-        <p>Beetle eyes<br>
-          Eel eyes<br>
-        <h2>Price</h2>
-        <p style="color:#FF0004;">$19.99</p>
-        <br>
-        <br>
-        <input type="button" value="ADD TO CART" class="btn-cart" >
-      </div>
+    <span id="white-box" class="white-box">
+      
+      <div class="informations">
+        <a class="close" id="close" onclick="closeModal()">X</a>
+        <img src="../../../assets/productos/{image}" id="product-box" alt="Produto">
+        <div class="words">
+            <p class="nome title-box" id="nome"></p>
+            <p class="title-box">Use effect</p>
+            <p class="effect" id="effect"></p>
+            <p class="title-box">Igredients</p>
+            <p class="igredients" id="igredients"></p>
+            <p class="title-box title-price">Price:</p>
+            <p class="price" id="price"></p>
+            <button class="btn-cart">ADD TO CART</button>
+        </div>
+    </div>
     </span> 
 
-    
+    <script src="../../scripts/Home/Index.js"> </script>
   </body>
 </html>

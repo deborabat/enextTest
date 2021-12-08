@@ -208,76 +208,6 @@
   font-family: 'Oswald', sans-serif;
 }
 
-
-.black-overlay {
-  top: 0;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-  display: none;
-  position: fixed;
-  background-color: black;
-  opacity:.80;
-  -moz-opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-
-span.white-box {
-   top: 15%;
-   left: 25%;
-   z-index: 6;
-   padding: 16px;
-   display: none;
-   overflow: auto;
-   min-width: 40%;
-   min-height: 50%;
-   position: fixed;
-   background:#FFFFFF;
-   border: 5px solid #ffffff;
-}
-
-.white-box .img img {
-  float:left;
-  width:300px;
-}
-
-.white-box .descricao {
-  float:left;
-  width:200px;
-  color:#000000;
-  font-size:14px;
-  font-family: 'Oswald', sans-serif;
-}
-  
-.white-box .descricao h2 {
-  margin:0;
-  clear:both;
-  width:150px;
-  font-size:15px;
-  font-weight:bold;
-}
-
-.btn-cart { 
-  border:0px;
-  width:130px;
-  height:40px;
-  color:#FFFFFF;
-  font-size:15px; 
-  padding:5px 15px;
-  font-family:arial;
-  background:#d73a1e;
-  margin:0 0 0 -40px;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
-span.white-box.active,
-.black-overlay.active {
-  display: block;
-}
-
 #footer {
   float:left;
   height:auto;
@@ -371,3 +301,82 @@ span.white-box.active,
   -webkit-border-radius: 3px;
 }
 
+.black-overlay {
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  background-color: black;
+  opacity:.80;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.white-box {
+   top: 15%;
+   left: 25%;
+   z-index: 6;
+   padding: 16px;
+   display: none;
+   overflow: auto;
+   min-width: 40%;
+   min-height: 50%;
+   position: fixed;
+   background:#FFFFFF;
+   border: 5px solid #ffffff;
+}
+
+.informations{
+  position: absolute;
+  margin-left: 20%;
+  width: 60%;
+  background-color: #FFFFFF;
+  height: auto;
+  z-index: 1040;
+}
+
+.close{
+  float: right;
+  margin: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.informations img{
+  margin-top: 20px;
+  width: 50%;
+}
+.words{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  float: right;
+  width: 35%;
+}
+.title-box{
+  font-weight: bold;
+  font-size: 20px;
+}
+.price{
+  font-size: 20px;
+  line-height: 0;
+  font-weight: bold;
+  margin-top: -15px;
+  position: relative;
+}
+.btn-cart { 
+  border:0px;
+  width:130px;
+  height:40px;
+  color:#FFFFFF;
+  font-size:15px; 
+  padding:5px 15px;
+  font-family:arial;
+  background:#d73a1e;
+  margin:0 0 0 -40px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
