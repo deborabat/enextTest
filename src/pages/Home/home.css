@@ -1,8 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oswald:400,300,700&subset=latin,latin-ext);
 
 #wrapper {
-	width: 1041px;
-	margin: 0 auto;
 	min-height:1000px;
 	background: #ffffff;
 }
@@ -31,7 +29,6 @@
 .item-header {
   display: flex;
   flex-direction: row;
-  
 }
 
 .search {
@@ -69,13 +66,9 @@
   font-family: "Helvetica Neue",Helvetica;
   font-size :14px;
   height: 50px;
-  line-height:20px;
   margin-bottom: 50px;
-  min-height: 50px;
   position: relative;
-  text-size-adjust:100%;
-  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-
+  border-width: 0;
 }
 
 #nav {
@@ -184,8 +177,8 @@
 
 #content ul li {
   float:left;
-  width:300px;
-  margin:15px;
+  width:350px;
+  margin:47px;
   list-style:none;
 }
 
@@ -210,10 +203,11 @@
 
 #footer {
   float:left;
-  height:auto;
-  width:991px;
+  height:220px;
+  width:90%;
   padding:25px;
-  margin:15px 0 0 0;
+  padding-inline: 10vh;
+  margin:45px 0 0 0;
   background:#e6e6e6;
 }
 
@@ -259,13 +253,13 @@
 
 #footer-esq .redes-sociais li a {
   float:left;
-  margin:5px 15px;  
+  margin:5px 15px;
 }
 
 #footer-dir {
-  width:410px;
+  width:450px;
   float:right;
-  height:155px;
+  height:120px;
   padding:20px;
   color:#000000;
   font-size: 15px;
@@ -316,38 +310,41 @@
 }
 
 .white-box {
-   top: 15%;
-   left: 25%;
-   z-index: 6;
-   padding: 16px;
-   display: none;
-   overflow: auto;
-   min-width: 40%;
-   min-height: 50%;
-   position: fixed;
-   background:#FFFFFF;
-   border: 5px solid #ffffff;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10vh;
+  padding-inline: 30vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.77);
 }
 
 .informations{
   position: absolute;
-  margin-left: 20%;
-  width: 60%;
+  margin-left: 10px;
   background-color: #FFFFFF;
   height: auto;
   z-index: 1040;
+  width: 50%;
+  float: left;
+  text-align: left;
 }
 
 .close{
   float: right;
   margin: 10px;
   font-size: 20px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .informations img{
-  margin-top: 20px;
-  width: 50%;
+  width: 100%;
+  max-width: 350px;
+  padding-top: 5vh;
 }
 .words{
   margin-top: 20px;
