@@ -175,30 +175,39 @@
   font-family: 'Oswald', sans-serif;
 }
 
-#content ul li {
-  float:left;
-  width:350px;
-  margin:47px;
-  list-style:none;
+#potions {
+    color: #000;
+    font-family: 'Droid Sans', sans-serif;
+    margin: 40px;
+    clear: both;
 }
 
-.img-produto img {
-  width:230px;
+#potions h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
 }
-  
-.nome-produto {
-  float:left;
-  color:#000000;
-  font-size: 15px;
-  margin:0 10px 0 50px;
-  font-family: 'Oswald', sans-serif;
+
+#potions #products {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
 }
-  
-.valor-produto {
-  float:left;
-  color:#FF0004;
-  font-size: 15px;
-  font-family: 'Oswald', sans-serif;
+
+#potions #products>figure {
+    font-weight: bold;
+    font-size: 14px;
+    width: calc(100% / 3);
+    margin: 40px 0;
+    display: inline-block;
+}
+
+section figure img {
+    max-width: 200px;
+    transition: opacity .5s ease-out;
+}
+section figure span {
+    color: #d73a1e;
+    font-weight: 400;
 }
 
 #footer {

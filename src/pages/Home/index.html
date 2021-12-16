@@ -5,143 +5,101 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="home.css">
-  <script
-  src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-data-auto-a11y="true"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    data-auto-a11y="true"></script>
+  <script src="../../scripts/Home/Index.js"> </script>
   <title>Merlin Posions</title>
 </head>
-
 
 <body>
   
   <div id="wrapper"> 
   
     <header>
-    <div id="header">
-      <div class="col-sm-3">
-        <div class="row">
-          <img src="../../../assets/logo.png" 
-             alt="Logo" id="logo"/>
-        </div> 
-      </div>
-      <div class="col-sm-3 col-md-2">
-        <div class="search">
-          <i class="fas fa-search" style="font-size:15px;color:#d73a1e"></i>
+      <div id="header">
+        <div class="col-sm-3">
+          <div class="row">
+            <img src="../../../assets/logo.png" 
+              alt="Logo" id="logo"/>
+          </div> 
+        </div>
+        <div class="col-sm-3 col-md-2">
+          <div class="search">
+            <i class="fas fa-search" style="font-size:15px;color:#d73a1e"></i>
             <input type="text" class="form-control inputSearch" placeholder="Search our stock" style="border: none;">
+          </div>
         </div>
-      </div>
-      <div class="col-sm-2">
-        <div class="row oferta">
-          <h3 class="free-name">Free Shipping</h3>
-          <h4 class="free-name">on orders over $50</h4>
+        <div class="col-sm-2">
+          <div class="row oferta">
+            <h3 class="free-name">Free Shipping</h3>
+            <h4 class="free-name">on orders over $50</h4>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-1 col-xs-6">
-        <div class="item-header">
+        <div class="col-sm-1 col-xs-6">
+          <div class="item-header">
             <img src="../../../assets/caldeirao.png" alt="Caldeirao" class="caldeirao">
+          </div>
         </div>
-      </div>
-      <div class="col-sm-2 col-xs-6">
-        <div class="item-header">
+        <div class="col-sm-2 col-xs-6">
+          <div class="item-header">
             <h4 class="bag">BAG: <span class="value">1</span></h4>
+          </div>
         </div>
       </div>
-    </div>
     </header>
 
     <nav id="menu">
       <div id="nav">
-          <div class="navbar-collapse collapse" id="navbar-collapse">
-            <ul>
-              <li>
-                <ul>
-                  <li><a href="#">Potions</a></li>
-                  <li><a href="#">Potions</a></li>
-                  <li><a href="#">Potions</a></li>
-                  <li><a href="#">Potions</a></li>
-                  <li><a href="#">Potions</a></li>
-                  <li><a href="#">Potions</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Ingredients <i class="fas fa-caret-down"></i></a>
-                <ul>
-                  <li><a href="#">Ingredients</a></li>
-                  <li><a href="#">Ingredients</a></li>
-                  <li><a href="#">Ingredients</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Books <i class="fas fa-caret-down"></i></a>
-                <ul>
-                  <li><a href="#">Books</a></li>
-                  <li><a href="#">Books</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Supplies <i class="fas fa-caret-down"></i></a>
-                <ul>
-                  <li><a href="#">Supplies</a></li>
-                  <li><a href="#">Supplies</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Clearance!</a></li>
-            </ul>
-              <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">Sign in</a></li>
-                  <li><a href="#">Sign up</a></li>
+        <div class="navbar-collapse collapse" id="navbar-collapse">
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#">Potions</a></li>
+                <li><a href="#">Potions</a></li>
+                <li><a href="#">Potions</a></li>
+                <li><a href="#">Potions</a></li>
+                <li><a href="#">Potions</a></li>
+                <li><a href="#">Potions</a></li>
               </ul>
-          </div>
+            </li>
+            <li><a href="#">Ingredients <i class="fas fa-caret-down"></i></a>
+              <ul>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Ingredients</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Books <i class="fas fa-caret-down"></i></a>
+              <ul>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Books</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Supplies <i class="fas fa-caret-down"></i></a>
+              <ul>
+                <li><a href="#">Supplies</a></li>
+                <li><a href="#">Supplies</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Clearance!</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Sign up</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div id="content">
-      <h1>Potions</h1>
-      <ul>
-        <li>
-          <a  id="produto" class="img-produto" href="javascript:void(0);" onclick="openModal('1')" >
-              <img src="../../../assets/productos/aging-potion.png" />
-          </a>
-          <div class="nome-produto">Aging Potion</div>
-          <div class="valor-produto">29.99</div>
-        </li>
-        <li>
-          <a id="produto" class="img-produto" href="javascript:void(0);" onclick="openModal('2')" >
-              <img src="../../../assets/productos/bulgeye-potion.png" />
-          </a>
-          <div class="nome-produto">Bulgeye Potion</div>
-          <div class="valor-produto">19.99</div>
-        </li>
-        <li>
-          <a id="produto" class="img-produto" href="javascript:void(0);" onclick="openModal('3')" >
-              <img src="../../../assets/productos/dragon-tonic.png" />
-          </a>
-          <div class="nome-produto">Dragon Tonic</div>
-          <div class="valor-produto">64.99</div>
-        </li>
-        <li>
-          <a id="produto" class="img-produto" href="javascript:void(0);" onclick="openModal('4')" >
-              <img src="../../../assets/productos/love-potion.png" />
-          </a>
-          <div class="nome-produto">Love Potion</div>
-          <div class="valor-produto">29.99</div>
-        </li>
-        <li>
-          <a id="produto" class="img-produto" href="javascript:void(0);" onclick="openModal('5')" >
-              <img src="../../../assets/productos/polyjuice-potion.png" />
-          </a>
-          <div class="nome-produto">Polyjuice Potion</div>
-          <div class="valor-produto">99.99</div>
-        </li>
-        <li>
-          <a id="produto" class="img-produto" hhref="javascript:void(0);" onclick="openModal('6')" >
-              <img src="../../../assets/productos/sleeping-draught.png" />
-          </a>
-          <div class="nome-produto">Sleeping Draught</div>
-          <div class="valor-produto">29.99</div>
-        </li>
-      </ul>
-      
-      <div class="black-overlay"> </div>
-    </div>
-
+    <section class="container-fluid main" id="potions" role="main">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-1"></div>
+              <h2>Potions</h2>
+              <div id="products"></div>
+          </div>
+      </div>
+  </section>
 
     <div id="footer">
       <div id="footer-esq">
@@ -179,18 +137,17 @@ data-auto-a11y="true"></script>
         <a class="close" id="close" onclick="closeModal()">X</a>
         <img src="" id="product-box" class="informations img" alt="Produto">
         <div class="words">
-            <p class="nome title-box" id="nome"></p>
-            <p class="title-box">Use effect</p>
-            <p class="effect" id="effect"></p>
-            <p class="title-box">Igredients</p>
-            <p class="igredients" id="igredients"></p>
-            <p class="title-box title-price">Price:</p>
-            <p class="price" id="price"></p>
-            <button class="btn-cart">ADD TO CART</button>
+          <p class="nome title-box" id="nome"></p>
+          <p class="title-box">Use effect</p>
+          <p class="effect" id="effect"></p>
+          <p class="title-box">Igredients</p>
+          <p class="igredients" id="igredients"></p>
+          <p class="title-box title-price">Price:</p>
+          <p class="price" id="price"></p>
+          <button class="btn-cart">ADD TO CART</button>
         </div>
-    </div>
+      </div>
     </span> 
 
-    <script src="../../scripts/Home/Index.js"> </script>
   </body>
 </html>
