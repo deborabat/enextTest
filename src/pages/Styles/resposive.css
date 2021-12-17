@@ -1,171 +1,61 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oswald:400,300,700&subset=latin,latin-ext);
-
-#wrapper {
-	min-height:1000px;
-	background: #ffffff;
+@font-face {
+  src: url("fonts/DroidSans.ttf");
+  font-family: "Droid";
 }
+@font-face {
+  src: url("fonts/georgia-pro-w01.ttf");
+  font-family: "georgia-pro";
+}
+@media only screen and (max-width:900px){
 
 #header {
 	background:#FFFFFF;
   display: flex;
   flex-direction: row;
-  font-family :"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: 132.361px;
-  line-height : 20px;
-  margin-left :81.6667px;
-  margin-right : 81.6667px;
   margin-top: 45px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   
 }
 
-.item-header-logo {
-  display: flex;
-  flex-direction: column;
-}
-
-.item-header {
-  display: flex;
-  flex-direction: row;
+.logo {
+  height: 80px;
+  margin-left: 1%;
+  margin-bottom: 20px;
 }
 
 .search {
-	height:40px;
-	width:280px;
-	margin:0 50px;
-	padding: 8px 0 0 35px;
-	border:1px solid #333333;
-    border-radius: 7px;
-    -moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
+  display: none;
+}
+
+.inputSearch {
+  display: none;
 }
 
 .free-name {
-  color: #d73a1e;
-  font-size: 16px;
+  display: none;
+}
+
+.caldeirao {
+  margin:5px 0px 10px 0px;
 }
 
 .bag {
 	color:#b3b3b3;
-	font-size: 25px;
+	font-size: 14px;
 	margin:10px 0 0 0;
 }
 
 .value {
 	color:#d73a1e;
+  font-size: 14px;
+	margin:10px 0 0 0;
 }
+
 #menu {
-	width:100%;
-	color:#ffffff;
-	font-size: 15px;
-	background:#523468;
-	padding: 0 5px 10px 0;
-  display: block;
-  font-family: "Helvetica Neue",Helvetica;
-  font-size :14px;
-  height: 50px;
-  margin-bottom: 50px;
-  position: relative;
-  border-width: 0;
-}
-
-#nav {
-	float:left;
-}
-	
-#nav ul ul {
 	display: none;
-}
-
-#nav ul li:hover > ul {
-	display: block;
-}
-
-#nav ul {
-	list-style: none;
-	position: relative;
-	display: inline-table;
-}
-
-#nav ul:after {
-	content: "";
-	clear: both;
-	display: block;
-}
-
-#nav ul li {
-	float: left;
-}
-
-#nav ul li:hover {
-	background: #422a53;
-    border-radius: 7px;
-    -moz-border-radius: 7px;
-	-webkit-border-radius: 7px;	
-}
-
-#nav ul li:hover a {
-	color: #fff;
-}
-	
-#nav ul li a {
-	display: block;
-	color: #FFFFFF;
-	padding: 10px 25px;
-	text-decoration: none;
-}
-
-#nav ul ul {
-	top: 100%;
-	padding: 0;
-	position: absolute;
-	background: #523468;
-    border-radius: 7px; 
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-}
-
-#nav ul ul li {
-	float: none; 
-	position: relative;
-	border-top: 1px solid #684582;
-	border-bottom: 1px solid #684582;
-}
-	
-#nav ul ul li:last-child {
-	border-bottom:none;
-}
-	
-#nav ul ul li a {
-	color: #fff;
-	padding: 10px 31px;
-}
-			
-#nav ul ul li a:hover {
-	background: #422a53;
-    border-radius: 7px; 
-    -moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-}
-
-
-#sign-in {
-	float:right;
-	font-size:15px;
-	margin:12px 0 0 0;
-	font-family: 'Droid Sans', sans-serif;
-}
-
-#sign-in a {
-	color:#FFFFFF;
-	text-decoration:none;
-}
-
-#sign-in span {
-	color:#a58ec2;
-	font-size:13px;
 }
 
 #content h1 {
@@ -211,12 +101,9 @@ section figure span {
 }
 
 #footer {
-  float:left;
-  height:220px;
-  width:90%;
+  width:94%;
+  height:400px;
   padding:25px;
-  padding-inline: 10vh;
-  margin:45px 0 0 0;
   background:#e6e6e6;
 }
 
@@ -229,7 +116,7 @@ section figure span {
 #footer-esq p { 
   color:#666666;
   font-size:15px;
-  margin:15px 0 0 15px;
+  margin:15px 0 0 0px;
   font-family: 'Droid Sans', sans-serif;
 }
 
@@ -261,21 +148,18 @@ section figure span {
 }
 
 #footer-esq .redes-sociais li a {
-  float:left;
   margin:5px 15px;
 }
 
 #footer-dir {
-  width:450px;
-  float:right;
+  width:400px;
+  margin-top: 45px;
   height:120px;
   padding:20px;
   color:#000000;
   font-size: 15px;
   background:#FFFFFF;
-    border-radius: 7px; 
-    -moz-border-radius: 7px;
-   -webkit-border-radius: 7px;
+  border-radius: 7px; 
   font-family: 'Oswald', sans-serif;
 }
 
@@ -385,4 +269,5 @@ section figure span {
     border-radius: 3px;
     -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+}
 }

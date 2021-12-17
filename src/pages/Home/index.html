@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="home.css">
-  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-    data-auto-a11y="true"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../Styles/home.css">
+  <link rel="stylesheet" href="../Styles/resposive.css">
+  <!-- font-awesome -->
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+  <!-- Scripts -->
   <script src="../../scripts/Home/Index.js"> </script>
   <title>Merlin Posions</title>
 </head>
@@ -14,93 +17,97 @@
 <body>
   
   <div id="wrapper"> 
-  
+
+  <!-- Header -->
+
     <header>
+
       <div id="header">
-        <div class="col-sm-3">
-          <div class="row">
-            <img src="../../../assets/logo.png" 
-              alt="Logo" id="logo"/>
-          </div> 
-        </div>
+
+        <img src="../../../assets/logo.png" alt="Logo" class="logo"/>
+        
         <div class="col-sm-3 col-md-2">
           <div class="search">
-            <i class="fas fa-search" style="font-size:15px;color:#d73a1e"></i>
-            <input type="text" class="form-control inputSearch" placeholder="Search our stock" style="border: none;">
+            <i class="fas fa-search"  style="font-size:14px;color:#d73a1e"></i>
+            <input type="text" class="inputSearch" placeholder="Search our stock">
           </div>
         </div>
+
         <div class="col-sm-2">
-          <div class="row oferta">
-            <h3 class="free-name">Free Shipping</h3>
-            <h4 class="free-name">on orders over $50</h4>
-          </div>
+          <h3 class="free-name">Free Shipping</h3>
+          <h4 class="free-name">on orders over $50</h4>
         </div>
+
         <div class="col-sm-1 col-xs-6">
-          <div class="item-header">
-            <img src="../../../assets/caldeirao.png" alt="Caldeirao" class="caldeirao">
-          </div>
+          <img src="../../../assets/caldeirao.png" alt="Caldeirao" class="caldeirao">
         </div>
+
         <div class="col-sm-2 col-xs-6">
-          <div class="item-header">
-            <h4 class="bag">BAG: <span class="value">1</span></h4>
-          </div>
+          <h4 class="bag">BAG: <span class="value">1</span></h4>
         </div>
+        
       </div>
     </header>
 
-    <nav id="menu">
-      <div id="nav">
-        <div class="navbar-collapse collapse" id="navbar-collapse">
-          <ul>
-            <li>
-              <ul>
-                <li><a href="#">Potions</a></li>
-                <li><a href="#">Potions</a></li>
-                <li><a href="#">Potions</a></li>
-                <li><a href="#">Potions</a></li>
-                <li><a href="#">Potions</a></li>
-                <li><a href="#">Potions</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Ingredients <i class="fas fa-caret-down"></i></a>
-              <ul>
-                <li><a href="#">Ingredients</a></li>
-                <li><a href="#">Ingredients</a></li>
-                <li><a href="#">Ingredients</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Books <i class="fas fa-caret-down"></i></a>
-              <ul>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">Books</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Supplies <i class="fas fa-caret-down"></i></a>
-              <ul>
-                <li><a href="#">Supplies</a></li>
-                <li><a href="#">Supplies</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Clearance!</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Sign in</a></li>
-            <li><a href="#">Sign up</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- Menu -->
 
+    <nav id="menu">
+
+      <div id="nav">
+        <ul>
+          <li><a href="#">Potions <i class="fas fa-caret-down"></i></a>
+            <ul>
+              <li><a href="#">Potions</a></li>
+              <li><a href="#">Potions</a></li>
+              <li><a href="#">Potions</a></li>
+              <li><a href="#">Potions</a></li>
+              <li><a href="#">Potions</a></li>
+              <li><a href="#">Potions</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Ingredients <i class="fas fa-caret-down"></i></a>
+            <ul>
+              <li><a href="#">Ingredients</a></li>
+              <li><a href="#">Ingredients</a></li>
+              <li><a href="#">Ingredients</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Books <i class="fas fa-caret-down"></i></a>
+            <ul>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Books</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Supplies <i class="fas fa-caret-down"></i></a>
+            <ul>
+              <li><a href="#">Supplies</a></li>
+              <li><a href="#">Supplies</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Charms <i class="fas fa-caret-down"></i></a>
+            <ul>
+              <li><a href="#">Charms </a></li>
+              <li><a href="#">Charms </a></li>
+            </ul>
+          </li>
+          <li><a href="#">Clearance!</a></li>
+        </ul>
+          <ul class="sign-in">
+            <li><a  href="#">Sign in</a></li>
+            <li><a  href="#">Sign on</a></li>
+          </ul>
+      </div>
+
+    </nav>
+    <!-- List Potions -->
     <section class="container-fluid main" id="potions" role="main">
       <div class="container">
-          <div class="row">
-              <div class="col-sm-1"></div>
-              <h2>Potions</h2>
-              <div id="products"></div>
-          </div>
+          <div class="col-sm-1"></div>
+          <h2>Potions</h2>
+          <div id="products"></div>
       </div>
-  </section>
-
+    </section>
+    <!-- Footer -->
     <div id="footer">
       <div id="footer-esq">
         <ul class="areas">
@@ -131,7 +138,7 @@
         <input type="button" value="Submit" class="btn-enviar" >
       </div>
     </div>
-
+    <!-- white Box- Modal -->
     <span id="white-box" class="white-box">
       <div class="informations" >
         <a class="close" id="close" onclick="closeModal()">X</a>
