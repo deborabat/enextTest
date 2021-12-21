@@ -24,6 +24,10 @@
 
       <div id="header">
 
+        <div class="nav-icon" onclick="openNav()" >
+          <i class="fas fa-bars" style="font-size:35px;color:#422a53"></i>
+        </div>
+
         <img src="../../../assets/logo.png" alt="Logo" class="logo"/>
         
         <div class="col-sm-3 col-md-2">
@@ -38,16 +42,50 @@
           <h4 class="free-name">on orders over $50</h4>
         </div>
 
-        <div class="col-sm-1 col-xs-6">
-          <img src="../../../assets/caldeirao.png" alt="Caldeirao" class="caldeirao">
+        <div class="caldeirao-div">
+          <div class="col-sm-1 col-xs-6">
+            <img src="../../../assets/caldeirao.png" alt="Caldeirao" class="caldeirao">
+          </div>
+       
+          <div class="col-sm-2 col-xs-6">
+            <h4 class="bag">BAG: <span class="value">1</span></h4>
+          </div>
         </div>
 
-        <div class="col-sm-2 col-xs-6">
+        <div class="caldeirao-mobile">
+          <img src="../../../assets/caldeirao.png" alt="Caldeirao" class="caldeirao">
           <h4 class="bag">BAG: <span class="value">1</span></h4>
         </div>
         
       </div>
     </header>
+
+    <!-- Sale mobile -->
+    <div class="free-mobile">
+      <h3>Free Shipping on orders over $50</h3>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <div class="closebtn">
+        <i class="fas fa-times" style="color:#422a53" onclick="closeNav()"></i>
+        <div class="search-Nav">
+          <i class="fas fa-search"  style="font-size:14px;color:#d73a1e"></i>
+          <input type="text" class="inputSearch-nav" placeholder="Search our stock">
+        </div>
+      </div>
+
+      <a href="#">Potions</a>
+      <a href="#">Ingredients</a>
+      <a href="#">Books</a>
+      <a href="#">Supplies</a>
+      <a href="#">Charms</a>
+
+      <div class="clearance">
+        <h5 href="#">Clearance!</h5>
+      </div>
+
+      <a href="#">Sign in <span>or</span> Sign up </a>
+    </div>
 
     <!-- Menu -->
 
